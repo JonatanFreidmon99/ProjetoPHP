@@ -1,0 +1,333 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0,0,0,0); 
+}
+input,button:focus{
+	outline: none;
+}
+/*PÁGINA DE LOGIN*/
+/*Parte de Apresentação do site*/
+#parteApresentacao{
+	float: left;
+	height: 70vh;
+	width: 100vw;
+	background-color: orange;
+}
+/*[APRESENTAÇÃO]Logo*/
+#div-logo{
+	float: left;
+	height: 20vh;
+	width: 100vw;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	background-color: none;	
+}
+#logo{
+	height: 20vh;
+	width: 20vw;
+}
+/*[APRESENTAÇÃO]Usuario*/
+#div-pontosPrincipaisUsuario{
+	float: left;
+	height: 50vh;
+	width: 33.3vw;
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	flex-direction: column;
+	background-color: none;
+}
+#label-UsuarioCasual{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 23px;
+	color: black; 
+}
+#iconIlustrativo1{
+ 	font-size: 28px;
+ 	margin-right: 1vw;
+}
+#iconIlustrativo2{
+	font-size: 28px;
+	margin-right: 1vw;
+}
+#iconIlustrativo3{
+	font-size: 28px;
+	margin-right: 1vw;
+}
+#iconIlustrativo4{
+	font-size: 28px;
+	margin-right: 1vw;
+}
+.span-pontosUsuario{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 18px;
+	color: black; 
+}
+/*[APRESENTAÇÃO]Icone do site + frase marcante*/
+#div-IconeLabel{
+	float: left;
+	height: 50vh;
+	width: 33.3vw;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	flex-direction: column;
+	background-color: none;	
+}
+#icon{
+	height: 20vh;
+	width: 10vw;
+}
+#label-marcante{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 28px;
+	color: black;	
+}
+/*[APRESENTAÇÃO]Empresarial*/
+#div-pontosPrincipaisEmpresarial{
+	float: left;
+	height: 50vh;
+	width: 33.3vw;
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	flex-direction: column;
+	background-color: none;	
+}
+#label-UsuarioEmpresarial{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 23px;
+	color: black; 
+}
+#iconIlustrativo5{
+ 	font-size: 28px;
+ 	margin-right: 1vw;
+}
+#iconIlustrativo6{
+	font-size: 28px;
+	margin-right: 1vw;
+}
+#iconIlustrativo7{
+	font-size: 28px;
+	margin-right: 0.5vw;
+}
+#iconIlustrativo8{
+	font-size: 28px;
+	margin-right: 1vw;
+}
+/*Parte de Logar/Cadastrar do site*/
+#parteLogarCadastrar{
+	float: left;
+	height: 30vh;
+	width: 100vw;
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	background-color: black;
+}
+/*Parte logar*/
+#parteLogar{
+	float: left;
+	height: 15vh;
+	width:40vw;
+	background-color: none;
+}
+/*Conteudo relacionado ao Nickname*/
+#nickname{
+	float: left;
+	height: 15vh;
+	width: 20vw;
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	background-color: none;
+}
+#label-nickname{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 25px;
+	color: ghostwhite;
+}
+#input-nickname{
+	height: 5vh;
+	width: 12vw;
+	padding-left: 0.5vw;
+	border: none;
+	border-radius: 10px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	color: grey;
+}
+/*Conteudo relacionado a Senha*/
+#senha{
+	float: left;
+	height: 15vh;
+	width: 20vw;
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	background-color: none;
+}
+#label-senha{
+	margin-left: 1vw;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 25px;
+	color: ghostwhite;
+}
+#input-senha{
+	height: 5vh;
+	width: 12vw;
+	padding-left: 0.5vw;
+	margin-right: 1.5vw;
+	border: none;
+	border-radius: 10px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	color: grey;
+}
+/*Conteudo relacionado ao Cadastramento*/
+/*[CADASTRAR]Div para capturar informações*/
+#aux-cadastrar{
+	float: left;
+	height: 28vh;
+	width: 25vw;
+	display: none;
+	transition-duration: 0.8s;
+}
+#cadastrar{
+	float: left;
+	height: 28vh;
+	width: 25vw;
+	background-color: none;
+
+}
+#label-cadastro{
+	float: left;
+	height: 7vh;
+	width: 25vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: none;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 28px;
+	color: ghostwhite;
+}
+/*Div NomeEmail foi criada para poder organizar as linhas de forma correta com o flex*/
+#div-NomeEmail{
+	float: left;
+	height: 8vh;
+	width: 25vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: none;
+}
+#input-cadastroNickname{
+    height: 4vh;
+	width: 10vw;
+	padding-left: 0.5vw;
+	border: none;
+	border-radius: 10px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 12px;
+	color: grey;
+}
+#input-email{
+ 	height: 4vh;
+	width: 10vw;
+	padding-left: 0.5vw;
+	border: none;
+	border-radius: 10px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 12px;
+	color: grey;	
+}
+/*Div SenhaVerSenha foi criada para poder organizar as linhas de forma correta com o flex*/
+#div-SenhaVerSenha{
+	float: left;
+	height: 8vh;
+	width: 25vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: none;
+}
+#input-cadastroSenha{
+	height: 4vh;
+	width: 10vw;
+	padding-left: 0.5vw;
+	border: none;
+	border-radius: 10px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 12px;
+	color: grey;	
+}
+#input-verificacaoSenha{
+	height: 4vh;
+	width: 10vw;
+	padding-left: 0.5vw;
+	border: none;
+	border-radius: 10px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 12px;
+	color: grey;	
+}
+/*Div ButtonCadastrar foi criada para poder organizar as linhas de forma correta com o flex*/
+#div-ButtonCadastrar{
+	float: left;
+	height: 5vh;
+	width: 25vw;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	background-color: none;
+}
+#button-cadastrar{
+	float: left;
+	height: 4vh;
+	width: 8vw;
+	margin-right: 0.5vw;
+	background-color: ghostwhite;
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 12px;
+	color: black; 
+	border: none;
+	border-radius: 5px;
+	transition-duration: 0.6s;
+}
+/*[CADASTRAR]Button*/
+#divButtonCadastrar-se{
+	float: left;
+	height: 15vh;
+	width: 20vw;
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	background-color: none;
+}
+#button-cadastrar-se{
+	float: left;
+	height: 7.5vh;
+	width: 15vw;
+	background-color: orange;
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 28px;
+	color: black; 
+	border: none;
+	border-radius: 5px;
+	transition-duration: 0.6s;
+}
+#button-cadastrar-se:hover{
+	background-color: ghostwhite;
+	transition-duration: 0.6s;
+}

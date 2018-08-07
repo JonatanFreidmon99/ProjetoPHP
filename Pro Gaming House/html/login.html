@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Ubuntu+Condensed" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript">
+		function abrirCadastramento(){
+			var verificação = document.getElementById("aux-cadastrar").style.display;
+			if (verificação == "none") {
+				document.getElementById("aux-cadastrar").style.display = "block";
+			}
+			else{
+				document.getElementById("aux-cadastrar").style.display = "none";
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="parteApresentacao">
+		<div id="div-logo">
+			<img src="../imagens/logo.png" id="logo">
+		</div>
+		<div id="div-pontosPrincipaisUsuario">
+			<label id="label-UsuarioCasual">
+				<strong>Usuário Casual</strong>
+			</label>
+			<label>
+				<i id="iconIlustrativo1" class="fa fa-users"></i> <span class ="span-pontosUsuario">Confira os fóruns que lhe interessar.</span>
+			</label>
+			<label>
+				<i id="iconIlustrativo2" class="fa fa-graduation-cap"></i><span class ="span-pontosUsuario"> Saiba mais sobre o mundo dos games.
+			</label>
+			<label>
+				<i id="iconIlustrativo3" class="fa fa-comments"></i><span class ="span-pontosUsuario"> Converse com amigos e pessoas novas.
+			</label>
+			<label>
+				<i id="iconIlustrativo4" class="fa fa-play-circle"></i><span class ="span-pontosUsuario"> Veja os vídeos dos jogos mais jogados.
+			</label>
+		</div>
+		<div id="div-IconeLabel">
+			<img src="../imagens/icon.png" id="icon">
+			<label id="label-marcante">Conecte com o mundo dos games!</label>	
+		</div>
+		<div id="div-pontosPrincipaisEmpresarial">
+			<label id="label-UsuarioEmpresarial">
+				<strong>Usuário Empresarial</strong>
+			</label>
+			<label>
+				<i id="iconIlustrativo5" class="fa fa-users"></i> <span class ="span-pontosUsuario">Confira os fóruns que lhe interessar.</span>
+			</label>
+			<label>
+				<i id="iconIlustrativo6" class="fa fa-graduation-cap"></i><span class ="span-pontosUsuario"> Confira os fóruns que lhe interessar.
+			</label>
+			<label>
+				<i id="iconIlustrativo7" class="fa fa-comments"></i><span class ="span-pontosUsuario"> Confira os fóruns que lhe interessar.
+			</label>
+			<label>
+				<i id="iconIlustrativo8" class="fa fa-play-circle"></i><span class ="span-pontosUsuario"> Confira os fóruns que lhe interessar.
+			</label>		
+		</div>
+	</div>
+	<div id="parteLogarCadastrar">
+		<div id="parteLogar">
+			<div id="nickname">
+				<label id="label-nickname">Nickname:</label>
+				<input type="text" name="nickname" id="input-nickname" placeholder="Digite o seu nickname...">	
+			</div>
+			<div id="senha">
+				<label id="label-senha">Senha:</label>
+				<input type="password" name="senha" id="input-senha" placeholder="Digite a sua senha...">	
+			</div>
+		</div>
+		<div id="aux-cadastrar">
+
+			<div id="cadastrar">
+				<label id="label-cadastro">Cadastro</label>	
+				<div id="div-NomeEmail">
+					<label></label>
+					<input type="text" name="novoNickname" id="input-cadastroNickname" placeholder="Digite o Nickname que desejar...">
+					<label></label>
+					<input type="text" name="novoEmail" id="input-email" placeholder="Digite o seu Email...">
+				</div>
+				<div id="div-SenhaVerSenha">
+					<label></label>
+					<input type="password" name="novaSenha" id="input-cadastroSenha" placeholder="Digite a senha que desejar...">
+					<label></label>
+					<input type="password" name="novaSenha" id="input-verificacaoSenha" placeholder="Digite novamente a sua senha...">
+				</div>
+				<div id="div-ButtonCadastrar">
+					<button id="button-cadastrar">Cadastrar</button>
+				</div>
+			</div>
+		</div>
+		<div id="divButtonCadastrar-se">
+			<button onclick="abrirCadastramento()" id="button-cadastrar-se">Cadastrar-se</button>
+		</div>
+	</div>
+</body>
+</html>
